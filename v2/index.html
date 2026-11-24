@@ -20,6 +20,11 @@ header{padding:40px 0 31px;display:flex;align-items:end;justify-content:space-be
 .support-foot{border-top:1px solid var(--line);background:#fafbfd;padding:18px 28px;display:flex;justify-content:space-between;gap:25px;font-size:18px}.support-foot strong{color:var(--green)}
 .collection{display:flex;justify-content:space-between;align-items:center;gap:30px;padding:27px 0 24px;margin-top:5px;border-bottom:1px solid var(--line)}.collection h2{font-size:23px;margin:0 0 4px}.collection p{font-size:17px;color:var(--muted);margin:0}.collection-value{font-size:42px;letter-spacing:-.045em;font-weight:700;color:var(--green);white-space:nowrap}
 footer{padding:22px 0 30px;font-size:16px;color:var(--muted)}summary{cursor:pointer;font-size:17px;color:var(--ink)}details p{max-width:1150px;line-height:1.6;margin:14px 0}.audit{border-collapse:collapse;width:100%;margin-top:18px;font-size:17px}.audit th,.audit td{text-align:left;padding:11px;border-bottom:1px solid var(--line)}.audit td:last-child,.audit th:last-child{text-align:right}.audit code{font-size:15px;overflow-wrap:anywhere}.foot{display:flex;justify-content:space-between;gap:20px;padding-top:22px;font-size:16px}
+.buyers{background:white;border:1px solid var(--line);border-radius:10px;overflow:hidden}.buyers-head{padding:24px 28px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:20px;align-items:center}.buyers-head h2{font-size:25px;letter-spacing:-.025em;margin:0}.buyers-head p{margin:0;font-size:17px;color:var(--muted)}
+.buyer{display:grid;grid-template-columns:56px 1.3fr 1fr 1fr 1fr;gap:18px;align-items:center;padding:18px 28px;border-top:1px solid var(--line)}.buyer:first-of-type{border-top:0}.buyer .n{font-size:22px;font-weight:700;color:var(--gold)}.buyer .when strong{display:block;font-size:20px}.buyer .when span,.buyer .src{font-size:15px;color:var(--muted)}.buyer .pay{font-size:19px}.buyer .caps{font-size:22px;font-weight:700;color:var(--gold)}.buyer .cv{font-size:22px;font-weight:700;color:var(--green);text-align:right}.buyer small{display:block;font-size:15px;color:var(--muted);font-weight:500}
+.buyer.tot{background:#e9f6ef}.buyer.tot .n{color:var(--green)}
+.extra{margin-top:18px;background:#fff8e6;border:1px solid #ecd9a8;border-radius:10px;padding:18px 28px;font-size:17px}.extra strong{color:var(--gold)}
+@media(max-width:800px){.buyer{grid-template-columns:30px 1fr auto;gap:4px 12px;padding:16px 18px;align-items:start}.buyer .n{grid-row:1/4}.buyer .when{grid-column:2/4}.buyer .pay{grid-column:2;font-size:17px}.buyer .caps{grid-column:2;font-size:18px}.buyer .cv{grid-column:3;grid-row:2/4;align-self:center;font-size:20px}.buyers-head{display:block;padding:20px 18px}.buyers-head p{margin-top:6px}.extra{padding:16px 18px}}
 @media(max-width:1100px){.wrap{width:calc(100% - 48px)}.results{grid-template-columns:1fr 1fr}.result h2{min-height:0}.number{font-size:65px}.bundle-copy,.bundle-math{padding:28px}.support-grid{grid-template-columns:1fr 1fr}.support-grid article:nth-child(3){border-left:0;border-top:1px solid var(--line)}.support-grid article:nth-child(4){border-top:1px solid var(--line)}.metric-number{font-size:37px}.support-grid h3{min-height:0}.period strong{font-size:20px}}
 @media(max-width:650px){.wrap{width:calc(100% - 32px)}.brandbar .wrap{padding:17px 0}.brand{font-size:25px}.brandbar span{font-size:16px}header{display:block;padding:29px 0 24px}h1{font-size:44px}header p{font-size:19px}.period{text-align:left;margin-top:19px}.period strong{font-size:21px}.period span{font-size:17px}.results{gap:12px}.result{padding:20px 17px}.result h2{font-size:18px;min-height:47px}.number{font-size:53px;margin:14px 0 10px}.result.value .number{font-size:49px}.result p{font-size:16px}.bundle{grid-template-columns:1fr;margin:20px 0}.bundle-copy{padding:25px 22px}.bundle h2{font-size:29px}.bundle p{font-size:18px}.bundle-math{padding:10px 22px 20px;border-left:0;border-top:1px solid #ffffff25}.math-row{font-size:17px;gap:13px}.math-row strong{font-size:20px}
 .support-head{display:block;padding:22px}.support-head h2{font-size:24px}.support-head p{margin-top:7px}.support-grid article{padding:22px 18px}.support-grid h3{font-size:17px;min-height:47px}.metric-number{font-size:30px}.support-grid p{font-size:15px}.support-foot{display:block;padding:18px 22px;font-size:17px}.support-foot span{display:block}.support-foot span+span{margin-top:8px}.collection{gap:18px;padding:24px 0}.collection h2{font-size:21px}.collection p{font-size:16px}.collection-value{font-size:36px}.foot{display:block}.foot span{display:block;margin:5px 0}.audit{font-size:15px}.audit th,.audit td{padding:8px 4px}.audit code{font-size:15px}
@@ -30,10 +35,10 @@ footer{padding:22px 0 30px;font-size:16px;color:var(--muted)}summary{cursor:poin
 <body>
 <div class="brandbar"><div class="wrap"><div class="brand">The French Atelier</div><span>Culture Capsules</span></div></div>
 <main class="wrap">
-<header><div><h1>French Capsules.<br>Pilot results to date.</h1><p>Paid acquisition pilot · updated v2 · <a href="../">Week 1 version</a></p></div><div class="period"><strong>October 24 to November 24</strong><span>2026 · Meta spend read Nov 24, 12:06 Israel time · USD</span></div></header>
+<header><div><h1>French Capsules.<br>Pilot results to date.</h1><p>Paid acquisition pilot · updated v2 · <a href="../">Week 1 version</a></p></div><div class="period"><strong>October 24 to November 24</strong><span>2026 · Israel time · USD</span></div></header>
 <section class="results" aria-label="Core results">
- <article class="result volume"><h2>Capsule registrations</h2><div class="number">14</div><p>14 capsules purchased, counted from contract value</p></article>
- <article class="result volume"><h2>Acquisitions</h2><div class="number">6</div><p>6 buyers in the CRM</p></article>
+ <article class="result volume"><h2>Capsule registrations</h2><div class="number">14</div><p>14 capsules bought, from each buyer’s price</p></article>
+ <article class="result volume"><h2>Acquisitions</h2><div class="number">6</div><p>6 buyers · CRM total $2.29k</p></article>
  <article class="result ratio"><h2>Capsules per acquisition</h2><div class="number">2.33×</div><p>14 registrations ÷ 6 acquisitions</p></article>
  <article class="result value"><h2>Full contract value</h2><div class="number">$2.29k</div><p>$2,286 = 4 × $453 + 2 × $237</p></article>
 </section>
@@ -45,33 +50,30 @@ footer{padding:22px 0 30px;font-size:16px;color:var(--muted)}summary{cursor:poin
   <div class="math-row total"><span>6 acquisitions · $2,286</span><strong>14 registrations</strong></div>
  </div>
 </section>
-<section class="support">
- <div class="support-head"><h2>Media investment &amp; unit economics</h2><p>Only the two Capsules sales campaigns</p></div>
- <div class="support-grid">
-  <article><h3>Marketing<br>spend</h3><div class="metric-number spend">$17,657.19</div><p>Oct 24 to Nov 24, by campaign ID</p></article>
-  <article><h3>Cost per<br>registration</h3><div class="metric-number spend">$1,261.23</div><p>Spend ÷ 14 registrations</p></article>
-  <article><h3>Contract value per<br>registration</h3><div class="metric-number value">$163.29</div><p>$2,286 ÷ 14 registrations</p></article>
-  <article><h3>Pilot ROI<br>on contract value</h3><div class="metric-number">−87.05%</div><p>Media-only return · ROAS 0.13×</p></article>
- </div>
- <div class="support-foot"><span>Cost per acquisition: <strong>$2,942.87</strong> · Average contract value per acquisition: <strong>$381.00</strong></span><span>Full contract value includes all three installments.</span></div>
+<section class="buyers">
+ <div class="buyers-head"><h2>Every buyer</h2><p>Purchase hour, first payment and bundle · CAPSULE20 price on all 6</p></div>
+ <div class="buyer"><div class="n">1</div><div class="when"><strong>Oct 24</strong><span>20:00–20:59 · Canada campaign #116980 · Ad #13 Fashion &amp; Art</span></div><div class="pay">$79/month<small>× 3 payments</small></div><div class="caps">1 capsule</div><div class="cv">$237<small>contract value</small></div></div>
+ <div class="buyer"><div class="n">2</div><div class="when"><strong>Oct 25</strong><span>21:00–21:59 · US campaign #116939 · Ad #6 Philippe</span></div><div class="pay">$151/month<small>× 3 payments</small></div><div class="caps">3 capsules (all three)</div><div class="cv">$453<small>contract value</small></div></div>
+ <div class="buyer"><div class="n">3</div><div class="when"><strong>Oct 30</strong><span>17:00–17:59 · US campaign #116939 · Ad #8 UGC Fashion &amp; Art</span></div><div class="pay">$151/month<small>× 3 payments</small></div><div class="caps">3 capsules (all three)</div><div class="cv">$453<small>contract value</small></div></div>
+ <div class="buyer"><div class="n">4</div><div class="when"><strong>Nov 1</strong><span>17:00–17:59 · US campaign #116939 · Ad #6 Philippe</span></div><div class="pay">$151/month<small>× 3 payments</small></div><div class="caps">3 capsules (all three)</div><div class="cv">$453<small>contract value</small></div></div>
+ <div class="buyer"><div class="n">5</div><div class="when"><strong>Nov 4</strong><span>23:00–23:59 · US campaign #116939 · Ad #6 Philippe</span></div><div class="pay">$79/month<small>× 3 payments</small></div><div class="caps">1 capsule</div><div class="cv">$237<small>contract value</small></div></div>
+ <div class="buyer"><div class="n">6</div><div class="when"><strong>Nov 5</strong><span>05:00–05:59 · US campaign #116939 · Ad #6 Philippe</span></div><div class="pay">$151/month<small>× 3 payments</small></div><div class="caps">3 capsules (all three)</div><div class="cv">$453<small>contract value</small></div></div>
+ <div class="buyer tot"><div class="n">6</div><div class="when"><strong>6 buyers</strong><span>4 bought all three · 2 bought one · none bought two</span></div><div class="pay">$762<small>paid at checkout</small></div><div class="caps">14 capsules</div><div class="cv">$2,286<small>contract value</small></div></div>
 </section>
+<div class="extra"><strong>One more Meta purchase, not in the CRM total:</strong> November 15, 14:00–14:59, US campaign #116939, Ad #6 Philippe, $189/month × 3 = $567, all three capsules at full price (no code). The CRM total of $2.29k for 6 buyers matches only without it.</div>
 <section class="collection">
- <div><h2>Initial collection (first payments)</h2><p>4 × $151 + 2 × $79, first monthly payments of the 6 CRM buyers</p></div><div class="collection-value">$762.00</div>
+ <div><h2>Paid at checkout (first payments)</h2><p>4 × $151 + 2 × $79 · the remaining $1,524 is due in the next two monthly payments</p></div><div class="collection-value">$762.00</div>
 </section>
 <footer>
- <details><summary>Campaign spend verification &amp; reporting definitions</summary>
-  <table class="audit"><thead><tr><th>Campaign</th><th>Verified objective</th><th>Spend in selected scope</th></tr></thead><tbody>
-   <tr><td>US Capsules<br><code>120251205794320546</code></td><td>Sales</td><td>$14,777.98</td></tr>
-   <tr><td>Canada Capsules<br><code>120251205793250546</code></td><td>Sales</td><td>$2,879.21</td></tr>
-   <tr><td><strong>Total</strong></td><td>Lead-generation campaigns excluded</td><td><strong>$17,657.19</strong></td></tr>
-  </tbody></table>
-  <p>Spend is the Meta read-only total for the two Capsules sales campaigns from October 24 to November 24, 2026, read November 24 at 12:06 Israel time. November 24 is a partial day. Both campaigns started October 20; $790.69 spent October 22–23 is outside this scope, as in the Week 1 version. Week 1 (October 24 to November 1) now reads $4,888.60 final; the Week 1 page shows $4,704.90, an earlier read. The campaigns retain “Lead Gen” in their names, but their Meta objective is OUTCOME_SALES. Lead-generation campaigns are excluded.</p>
-  <p><strong>How registrations are counted.</strong> One purchase can include 1, 2 or 3 capsules, so registrations are counted from contract value, not from CRM order rows. <a href="https://www.frenchatelierlive.com/culture-capsules" target="_blank" rel="noopener noreferrer">Live website prices</a>, checked November 24: 1 capsule $297 ($99 × 3), 2 capsules $534 ($178 × 3), 3 capsules $567 ($189 × 3). With the 20% CAPSULE20 code: 1 capsule $237 ($79 × 3), 2 capsules $426 ($142 × 3), 3 capsules $453 ($151 × 3). The CRM total is $2.29k for 6 acquisitions. The Week 1 four (3 × $453 + 1 × $237 = $1,596) leave $690 for the two new buyers, which only $453 + $237 matches. Total $2,286. That gives 4 × 3 + 2 × 1 = 14 registrations, or 2.33 capsules per buyer. Meta’s first-payment values confirm it: four of $151 and two of $79. ESTIMATE: the deal-by-deal mix is price-matched from the CRM total and Meta values. The per-deal CRM report has not yet been checked.</p>
-  <p><strong>Not in the CRM total yet.</strong> Meta also reports one more purchase on November 15 (US campaign) with a $189 first payment. That is 3 capsules at full price, $567. If the CRM confirms it, the totals become 7 acquisitions, 17 registrations, $2,853 contract value, $1,038.66 per registration and 2.43 capsules per buyer.</p>
-  <p>ROI = (full contract value − media spend) ÷ media spend. This excludes other business costs and is not realized cash profit. ROAS = contract value ÷ spend. Initial collection is the first monthly payments, not a reconciled bank-settlement total. The remaining $1,524 of contract value is not yet collected.</p>
+ <details><summary>How the numbers are counted</summary>
+  <p><strong>Buyers and contract value:</strong> 6 acquisitions and $2.29k contract value are the CRM totals. The 6 purchases above add up to $2,286.</p>
+  <p><strong>Purchase details:</strong> the date, hour, campaign, ad and first payment of each purchase come from Meta purchase data for the two Capsules sales campaigns (Israel time).</p>
+  <p><strong>Capsules (registrations):</strong> one purchase can include 1, 2 or 3 capsules, so registrations count capsules, not orders. Each first payment matches exactly one bundle on the <a href="https://www.frenchatelierlive.com/culture-capsules" target="_blank" rel="noopener noreferrer">live website prices</a>, checked November 24: 1 capsule $99/month ($297), 2 capsules $178 ($534), 3 capsules $189 ($567). With the 20% CAPSULE20 code: 1 capsule $79 ($237), 2 capsules $142 ($426), 3 capsules $151 ($453). So $151 is all three capsules with CAPSULE20, and $79 is one capsule with CAPSULE20.</p>
+  <p><strong>Paid at checkout</strong> is the sum of the first monthly payments, not a bank-settlement total.</p>
  </details>
  <div class="foot"><span>The French Atelier · Culture Capsules</span><span>October 24 to November 24, 2026 · v2</span></div>
 </footer>
+
 </main>
 </body>
 </html>
